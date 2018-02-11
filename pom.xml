@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>me.xxluigimario</groupId>
+    <artifactId>ProdigyGadgetUtil</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <repositories>
+        <!-- Spigot repo -->
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <!-- Sonatype repo -->
+        <repository>
+            <id>sonatype-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>pex-repo</id>
+            <url>http://pex-repo.aoeu.xyz</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <!--Spigot API-->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.12-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--Bukkit API-->
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.12-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>fr.onecraft</groupId>
+            <artifactId>clientstats</artifactId>
+            <version>2.8.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../Libs/ClientStats.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>fr.cocoraid</groupId>
+            <artifactId>prodigygadget</artifactId>
+            <version>2.49.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../Libs/ProdigyGadgetDiamond.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>ru.tehkode</groupId>
+            <artifactId>PermissionsEx</artifactId>
+            <version>1.23.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../Libs/PermissionsEx-1.23.4.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>cratereloaded</groupId>
+            <artifactId>cratereloaded</artifactId>
+            <version>1.3.97.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../Libs/CrateReloaded.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>

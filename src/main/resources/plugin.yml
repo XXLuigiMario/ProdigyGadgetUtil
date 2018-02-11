@@ -1,0 +1,6 @@
+name: ProdigyGadgetUtil
+author: XXLuigiMario
+version: 1.0
+description: Does some fancy stuff.
+main: me.xxluigimario.prodigygadgetutil.GadgetUtil
+depend: [ClientStats, ProdigyGadget, PermissionsEx, CrateReloaded]
